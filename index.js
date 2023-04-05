@@ -52,12 +52,12 @@ function gameRound(){
                 if(result.userGuess === gameData.zombie.guess){
                          // decrease zombie health by user.damage
                         gameData.zombie.damage -= gameData.user.damage;
-                        console.log(`You hit the zombie with ${gameData.user.damage} damage.`)
-                        console.log(`Your health is ${gameData.user.health} and the Zombie health is ${gameData.zombie.health}.`)
+                        console.log(`\nYou hit the zombie with ${gameData.user.damage} damage.`)
+                        console.log(`Your health is ${gameData.user.health} and the Zombie health is ${gameData.zombie.health}.\n`)
                 } else {
                         gameData.user.health -= gameData.zombie.damage;
-                        console.log(`The zombie slashed you with ${gameData.zombie.damage} damage.`)
-                        console.log(`Your health is ${gameData.user.health} and the Zombie health is ${gameData.zombie.health}.`)
+                        console.log(`\nThe zombie slashed you with ${gameData.zombie.damage} damage.`)
+                        console.log(`Your health is ${gameData.user.health} and the Zombie health is ${gameData.zombie.health}.\n`)
                 }
 
                 checkResults();
