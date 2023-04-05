@@ -47,8 +47,8 @@ function gameRound(){
                 gameData.zombie.damage = parseInt(Math.floor(Math.random() * 5) + 1);
                 gameData.user.damage = parseInt(Math.floor(Math.random() * 5) + 1)
                 
-                console.log(gameData.zombie.guess)
-                console.log(gameData.user.guess);
+                //console.log(gameData.zombie.guess)
+                //console.log(gameData.user.guess);
 
                 if(gameData.user.guess === gameData.zombie.guess){
                          // decrease zombie health by user.damage
